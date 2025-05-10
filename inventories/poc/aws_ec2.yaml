@@ -10,7 +10,7 @@ filters:
     - poc
 
 hostnames:
-  - tag:Name
+  - private-ip-address  # ← ここを変更（NameタグからプライベートIPに）
 
 keyed_groups:
   - key: tags.Environment
@@ -21,4 +21,4 @@ keyed_groups:
     prefix: ''
 
 compose:
-  ansible_host: instance_id # For ssm connection
+  ansible_host: instance_id  # For ssm connection
