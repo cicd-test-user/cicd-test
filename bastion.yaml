@@ -1,5 +1,5 @@
 - name: Bastion
-  hosts: bastion
+  hosts: poc  # ← ここを修正
   gather_facts: true
   become: true
 
@@ -8,6 +8,6 @@
       ansible.builtin.command: echo "Hello, World!" > /tmp/hello.txt
       changed_when: false
 
-  roles:
-    - role: geerlingguy.nginx
-      tags: nginx
+  # roles:
+  #   - role: geerlingguy.nginx
+  #     tags: nginx
