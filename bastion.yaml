@@ -1,6 +1,6 @@
 - name: Bastion
   hosts: poc  # ← ここを修正
-  gather_facts: true
+  gather_facts: false
   become: true
 
   tasks:
