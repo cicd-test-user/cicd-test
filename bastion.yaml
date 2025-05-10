@@ -8,6 +8,6 @@
       ansible.builtin.command: echo "Hello, World!" > /tmp/hello.txt
       changed_when: false
 
-  # roles:
-  #   - role: geerlingguy.nginx
-  #     tags: nginx
+  roles:
+    - role: geerlingguy.nginx
+      tags: nginx
