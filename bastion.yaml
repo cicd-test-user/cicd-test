@@ -1,5 +1,5 @@
 - name: Bastion
-  hosts: poc  # ← ここを修正
+  hosts: bastion  # ← ここを修正
   gather_facts: false
   become: true
 
